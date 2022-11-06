@@ -11,8 +11,10 @@ apt-get install gnupg2 gnupg gnupg1   -y
 apt update -y &&  apt-get install xvfb -y 
 apt-get install xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic -y 
 apt update -y 
-export DISPLAY=:1   
-Xvfb :1 -screen 0 1920x1080x24 & 
+rm /tmp/.X11-unix/X1
+rm /tmp/.X1
+Xvfb :1 -screen 0 1024x768x16 &
+
 pip install selenium
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A6DCF7707EBC211F  
 apt update -y 
