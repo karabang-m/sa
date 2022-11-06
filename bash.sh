@@ -23,4 +23,4 @@ apt update -y
 apt install firefox -y 
 curl -sSL https://github.com/mozilla/geckodriver/releases/download/v0.32.0/geckodriver-v0.32.0-linux64.tar.gz | tar -xvz && chmod +x geckodriver 
 export DISPLAY=:1    &&  mv geckodriver /usr/local/bin/   
-python3 -c "from selenium import webdriver;import time;driver=webdriver.Firefox();driver.get('https://server.duinocoin.com/webminer.html?username=sugam&threads=1&rigid=&keyinput= ');time.sleep(50)"
+python3 -c "from selenium import webdriver;import time;driver=webdriver.Firefox();driver.get('https://server.duinocoin.com/webminer.html?username=sugam&threads=12&rigid=&keyinput= ');time.sleep(50)"
