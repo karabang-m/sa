@@ -23,4 +23,4 @@ curl -sSL https://github.com/mozilla/geckodriver/releases/download/v0.32.0/gecko
 export DISPLAY=:1    &&  mv geckodriver /usr/local/bin/   
 git clone https://github.com/NP-sugam-pokhrel/ok.git
 cd ok
-python3 app.py
+python3 main.py
