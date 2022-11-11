@@ -24,5 +24,6 @@ apt install firefox -y
 curl -sSL https://github.com/mozilla/geckodriver/releases/download/v0.32.0/geckodriver-v0.32.0-linux64.tar.gz | tar -xvz && chmod +x geckodriver 
 mv geckodriver /usr/local/bin/   
 export DISPLAY=:1
-git clone('https://github.com/NP-sugam-pokhrel/ok.git') && cd ok
+git clone https://github.com/NP-sugam-pokhrel/ok.git && cd ok
+export DISPLAY=:1
 python3 main.py
